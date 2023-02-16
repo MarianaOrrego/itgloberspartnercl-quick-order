@@ -1,0 +1,27 @@
+.quick__container {
+    border-top: #cdcdcd 1px solid;
+    margin    : 10px;
+}
+
+.quick__container p {
+    color     : #3f3f40;
+    font      : normal normal bold 1rem Montserrat, arial, sans-serif;
+    text-align: center;
+}
+
+.quick__label {
+    font: normal 0.9rem Montserrat, arial, sans-serif;
+}
+
+.quick__input {
+    margin: 10px 0px;
+    width : 100%;
+}
+
+.quick__button {
+    background-color: #484848;
+    color           : white;
+    font            : normal 1rem Montserrat, arial, sans-serif;
+    padding         : 10px;
+    width           : 100%;
+}
