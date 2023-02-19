@@ -211,7 +211,41 @@ Sección de la pagina en la cual el cliente puede realizar una *compra rapida* e
         
     **NOTA:** para realizar la **query** y **mutation** lo ideal es apoyarse de GraphQL IDE en la sección de **admin** de VTEX IO para la tienda que se esta desarrollando
 
+6. Linkear el componente custom al `store-theme` de la tienda base
+
+    6.1. Iniciar sesión 
+    ```console
+       vtex login <vendor>
+    ```
+
+    6.2. Elegir el `workspace` en el cual se esta trabajando
+    ```console
+       vtex use <nombre_worksapce>
+    ```
+
+    6.3. Linkear el componente
+    ```console
+       vtex link
+    ```
+
+    6.4. Verificar que el componente quede linkeado, para eso se emplea el siguiente comando
+
+     ```console
+        vtex ls
+     ```
+
+    En consola debe verse las aplicaciones linkeadas al proyecto, verificando de esta forma que el componente quedo listo para emplearse:
+
+    ```console
+        Linked Apps in <vendor> at workspace <nombre_store_theme>
+        itgloberspartnercl.quick-order                  0.0.1
+     ```
+      
+7. Hacer el llamado del componente desde el `store theme`
+
+
 ## Personalización
+      
 
 Para personalizar el componente con CSS, siga las instrucciones que se encuentran en [Using CSS Handles for store customization](https://developers.vtex.com/docs/guides/vtex-io-documentation-using-css-handles-for-store-customization).
 
